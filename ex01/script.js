@@ -1,6 +1,5 @@
 function consultarEndereco() {
   let cep = document.querySelector(".cep").value;
-  let listaDeCidades = [];
 
   if (cep.length !== 8) {
     alert("CEP Inválido!");
@@ -10,16 +9,11 @@ function consultarEndereco() {
   let url = `https://viacep.com.br/ws/${cep}/json/`;
   fetch(url).then(response => {
     response.json().then((data) => {
-      console.log(data);
-      listaDeCidades.push(data);
-      mostrarEndereco(listaDeCidades);
+      let resultado = document.querySelector(".resultado").cloneNode(true);
+      resultado.innerHTML = data.localidade;
+      document.body.append(resultado);
     })
   });
-}
-
-
-function mostrarEndereco(dados) {
-  let resultado = document.querySelector(".resultado").innerHTML = `<p>${dados.localidade}</p>`
 }
 
 let button = document.querySelector(".button").addEventListener("click", consultarEndereco);

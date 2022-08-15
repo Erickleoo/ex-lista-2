@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+body {
+  background: url(https://c.wallhere.com/photos/45/9a/1920x1200_px_nature_pokemon-1004643.jpg!d);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Lato';
+  max-width: 1400px;
+}
+
+
+
+.pokedex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 30%;
+}
+
+.card {
+  width: 200px;
+  height: 400px;
+  list-style: none;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+
+  40% {
+    transform: translateY(0px);
+  }
+
+  80% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.card-title .number {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+}
+
+hr {
+  width: 70%;
+  height: 5px;
+  background-color: #7fffd4;
+  border-radius: 10px;
+}
+
+
+.card-image {
+  height: 150px;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card-subtitle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.card-image-footer {
+  padding: 20px;
+  width: 50%;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffcb05;
+  font-family: 'Lato';
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pokemon-search input {
+  width: 500px;
+  height: 30px;
+}
+
+.pokemon-search button {
+  height: 35px;
+  background: #2a75bb;
+  color: #fff;
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+.pokemon-bg {
+  background: #fff;
+  width: 565px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-container {
+  background-color: #F2F2F2;
+  width: 400px;
+  height: 100%;
+}
+
+.pokemon-info {
+  padding: 0px 20px 0px 20px;
+}
+
+.pokemon-info-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pokemon-name {
+  padding: 20px;
+  font-size: 1.250rem;
+}
+
+.pokemon-img {
+  width: 100%;
+  justify-self: center;
+  border-radius: 5%;
+  background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pokemon-id {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+}
